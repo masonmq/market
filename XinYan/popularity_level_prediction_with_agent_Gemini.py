@@ -19,8 +19,7 @@ from PIL import Image
 from post_metadata import post_metadata
 
 # Prefer GEMINI_API_KEY; GOOGLE_API_KEY is the common name in Google AI Studio docs.
-#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY", "")
-GEMINI_API_KEY = "AIzaSyA4CPL_tuilGaL-rKN94T-FyBM-TKTfE-Q"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY", "")
 SYSTEM_PROMPT_TEMPLATE = """You are a senior social media analyst with expertise in {agent_expert_domain}, and you have years of experience in audience behavior, feed algorithms, and cross-platform engagement patterns.
 
 You evaluate the post strictly based on the provided image and metadata.
